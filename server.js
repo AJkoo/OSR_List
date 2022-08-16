@@ -13,7 +13,7 @@ var app = http.createServer(function(request,response){
     var queryData = url.parse(_url, true).query;
     var pathname = url.parse(_url, true).pathname;
 
-    if(pathname === `/`){
+    if(pathname === `/OSR_List`){
           var title = 'Welcome';
           var list = ``;
           var HTML = template.html(title, 
